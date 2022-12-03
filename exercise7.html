@@ -1,0 +1,50 @@
+<!-- --Exercise : 7-- -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p align="center">Seven</p>
+    <p>Print elements in Array</p>
+    <p id="demo"></p>
+    <p>Delete last Element</p>
+    <p id="demo1"></p>
+    <p>Add element at the starting of the Array</p>
+    <p id="demo2"></p>
+    <p>Add element at the end of the Array</p>
+    <p id="demo3"></p>
+    <p>Delete 1st element</p>
+    <p id="demo4"></p>
+    <p>Slice Method</p>
+    <p id="demo5"></p>
+    <p>Splice method</p>
+    <p id="demo6"></p>
+    <p>String Concatenation</p>
+    <p id="demo7"></p>
+    <script>
+        let array = ["Greg", "Mary", "Devon", "James"];
+        document.getElementById("demo").innerHTML = array;
+        array.pop();
+        document.getElementById("demo1").innerHTML = array;
+        array.unshift("ABC");
+        document.getElementById("demo2").innerHTML = array;
+        array.push("pqr");
+        document.getElementById("demo3").innerHTML = array;
+        array.shift();
+        document.getElementById("demo4").innerHTML = array;
+        let array2 = array.slice(1, 3);
+        document.getElementById('demo5').innerHTML = array2;
+        array2.splice(0, 1, 'xyz', 'mno');
+        document.getElementById("demo6").innerHTML = array2;
+        x = array2.concat("Greg")
+        document.getElementById("demo7").innerHTML = x;
+    </script>
+</body>
+
+</html>
